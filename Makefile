@@ -2,8 +2,9 @@ CANDIDATES := $(wildcard .??* .config/*)
 EXCLUDES   := .DS_Store .git .config
 DOTFILES   := $(filter-out $(EXCLUDES), $(CANDIDATES))
 
-.PHONY: *
 .DEFAULT_GOAL := help
+
+.PHONY: *
 
 list: ## Show dot files in this repo
 	@$(foreach val, $(DOTFILES), /bin/ls -dF $(val);)
