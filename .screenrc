@@ -1,0 +1,56 @@
+# basic settings
+# excape key => ^\
+escape ^\\\
+startup_message off
+
+# line buffer
+defscrollback 10000
+
+# encoding
+defkanji utf-8
+defencoding utf-8
+encoding utf-8 utf-8
+
+# key bindings
+
+bind w windowlist
+
+# window splitting
+bind s split
+bind q only
+
+bind -c REGION s split
+bind -c REGION v vert_split
+bind -c REGION o only
+bind -c REGION c remove
+bind -c REGION f focus
+bind -c REGION r resize
+bind x command -c REGION
+
+# hardstatus
+
+#caption always "%{= Rk} %?%F%{b kr}%? %?%h%:%t (screen #%n)%? %{-}"
+caption always "%{= Kw} %n %t"
+
+#hardstatus alwayslastline "%{= Gk} %-Lw%40L>%{b kg} %n %t %{-}%+Lw%-040=%{b km} %l %{.b} %Y/%m/%d %C:%s %A "
+#hardstatus alwayslastline "%{= Wk} %-Lw%{b kw} %n %t %{-}%+Lw %-00=%{-} "
+#hardstatus alwayslastline "%{= Wk} %-Lw%40L>%{b bw} %n %t %+Lw%{Wk} %-Lw%{Wk}"
+
+hardstatus off
+
+sorendition "= Kw"
+
+# terminal settings
+term xterm-256color
+
+#terminfo and termcap for nice 256 color terminal
+# allow bold colors - necessary for some reason
+attrcolor b ".I"
+# tell screen how to set colors. AB = background, AF=foreground
+termcapinfo xterm "Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm"
+termcapinfo xterm-color "Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm"
+# erase background with current bg color
+defbce "on"
+
+# to avoid escape latency problem when integrate neovim and screen
+maptimeout 10

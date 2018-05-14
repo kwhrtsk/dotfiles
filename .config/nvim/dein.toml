@@ -1,0 +1,70 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'Shougo/vimproc.vim'
+build = 'make'
+
+[[plugins]]
+repo = 'w0ng/vim-hybrid'
+
+[[plugins]]
+repo = 'tpope/vim-surround'
+
+[[plugins]]
+repo = 'tpope/vim-repeat'
+
+[[plugins]]
+repo = 'vim-scripts/Align'
+
+[[plugins]]
+repo = 'vim-scripts/gtags.vim'
+
+[[plugins]]
+repo = 'kassio/neoterm'
+
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+
+[[plugins]]
+repo = 'Shougo/unite.vim'
+
+[[plugins]]
+repo = 'Shougo/vimfiler'
+depends = 'unite.vim'
+
+[[plugins]]
+repo = 'Shougo/unite-outline'
+
+[[plugins]]
+repo = 'osyo-manga/vim-watchdogs'
+
+[[plugins]]
+repo = 'osyo-manga/shabadou.vim'
+
+[[plugins]]
+repo = 'thinca/vim-quickrun'
+
+[[plugins]]
+repo = 'pocke/vim-hier'
+
+[[plugins]]
+repo = 'dannyob/quickfixstatus'
+
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+
+[[plugins]]
+repo = 'dhruvasagar/vim-table-mode'
+
+[[plugins]]
+repo = 'fuenor/qfixhowm'
+
+#[[plugins]]
+#repo = 'w0rp/ale'
+
+[[plugins]]
+repo = 'easymotion/vim-easymotion'
+
+[[plugins]]
+repo = 'gyim/vim-boxdraw'
