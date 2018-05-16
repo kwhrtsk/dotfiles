@@ -1,5 +1,6 @@
 [core]
 	pager = less -$LESS -cR +'/^(---)?'
+  editor = nvim
 [status]
 	color = true
 [diff]
