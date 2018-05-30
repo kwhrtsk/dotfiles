@@ -40,7 +40,7 @@ cnoremap <C-N> <DOWN>
 "キーマップリーダー
 let QFixHowm_Key = 'g'
 "howm_dirはファイルを保存したいディレクトリを設定。
-let howm_dir             = '~/.vim/.howm/'
+let howm_dir             = '~/.howm/'
 let howm_filename        = '%Y/%m/%Y-%m-%d-%H%M%S.howm'
 let howm_fileencoding    = 'utf-8'
 let howm_fileformat      = 'unix'
