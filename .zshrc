@@ -144,3 +144,6 @@ source ~/.ghq/github.com/kwhrtsk/docker-fzf-completion/docker-fzf.zsh
 
 # Helm
 source <(helm completion zsh)
+
+# asdf
+[ -d ~/.asdf ] && source ~/.asdf/asdf.sh && source ~/.asdf/completions/asdf.bash
