@@ -147,3 +147,7 @@ source <(helm completion zsh)
 
 # asdf
 [ -d ~/.asdf ] && source ~/.asdf/asdf.sh && source ~/.asdf/completions/asdf.bash
+
+# kubectx
+[ $commands[kubectx] ] && alias kctx=kubectx
+[ $commands[kubens] ] && alias kns=kubens
